@@ -1,4 +1,3 @@
 # Shane-Java
 ----------------------
-The Shane-Java Website Code 
-[I Need Sleep]
+My HTML & CSS code for my website.
