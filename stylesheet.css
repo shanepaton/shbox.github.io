@@ -1,5 +1,11 @@
 body {
-font-family: "Courier New";
+    @font-face {
+    font-family: 'modesevenregular';
+    src: url('modes___-webfont.woff2') format('woff2'),
+         url('modes___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
 }
 @font-face {
     font-family: 'modesevenregular';
