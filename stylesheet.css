@@ -1,29 +1,32 @@
 body {
     @font-face {
-    font-family: 'modesevenregular';
-    src: url('modes___-webfont.woff2') format('woff2'),
-         url('modes___-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+        font-family: 'modesevenregular';
+        src: url('modes___-webfont.woff2') format('woff2'),
+            url('modes___-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
     }
 }
+
 @font-face {
     font-family: 'modesevenregular';
     src: url('modes___-webfont.woff2') format('woff2'),
-         url('modes___-webfont.woff') format('woff');
+        url('modes___-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
+
 html {
-  background-color: #000000; 
-    
-  h1 {
-    font-family: 'modesevenregular', Arial, sans-serif;
-    font-weight:normal;
-    font-style:normal;
+    background-color: #000000;
+
+    h1 {
+        font-family: 'modesevenregular', Arial, sans-serif;
+        font-weight: normal;
+        font-style: normal;
     }
 }
+
 canvas {
     padding-left: 0;
     padding-right: 0;
@@ -32,7 +35,5 @@ canvas {
     display: block;
     width: 800px;
 }
-<p style="text-align:center">
-    <a href="https://github.com/Shane-Java/Number-Genorator-9000">Random Number Genorator 9000</a> 
-    <a href="https://github.com/Shane-Java">My Github</a>
-</p>
+
+<p style="text-align:center"><a href="https://github.com/Shane-Java/Number-Genorator-9000">Random Number Genorator 9000</a><a href="https://github.com/Shane-Java">My Github</a></p>
