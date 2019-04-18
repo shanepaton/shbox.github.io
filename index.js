@@ -1,4 +1,4 @@
-let numOfClicks = 1;
+var numOfClicks = 1;
 alert("Welcome to Shane-Games");
 document.getElementById("eventClick").onclick = function() {
     numOfClicks += 1;
