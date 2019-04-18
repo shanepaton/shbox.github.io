@@ -7,6 +7,41 @@ body {
         font-style: normal;
     }
 }
+h1 {
+    font-family: 'modesevenregular', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+        
+p {
+    font-family: 'modesevenregular', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+            
+a {
+    font-family: 'modesevenregular', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+            
+h1 {
+    text-align: center;
+}
+            
+p {
+    text-align: center;
+}
+            
+.center {
+    text-align: center;
+}
+
+input {
+    font-family: 'modesevenregular', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'modesevenregular';
