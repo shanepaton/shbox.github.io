@@ -1,8 +1,8 @@
 body {
     @font-face {
         font-family: 'modesevenregular';
-        src: url('modes___-webfont.woff2') format('woff2'),
-            url('modes___-webfont.woff') format('woff');
+        src: url('pixelfont.woff2') format('woff2'),
+            url('pixelfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
     }
@@ -45,8 +45,8 @@ input {
 
 @font-face {
     font-family: 'modesevenregular';
-    src: url('modes___-webfont.woff2') format('woff2'),
-        url('modes___-webfont.woff') format('woff');
+    src: url('pixelfont.woff2') format('woff2'),
+        url('pixelfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
