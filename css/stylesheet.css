@@ -1,3 +1,7 @@
+div {
+
+}
+
 body {
     @font-face {
         font-family: 'modesevenregular';
@@ -52,8 +56,14 @@ input {
 
 }
 
+
+
 html {
-    background-color: #000000;
+    
+    background: #466368;
+    background: radial-gradient(#4869ff,#4897ff, #48cbff);
+    background-repeat: repeat;
+    height: 998px;
 
     h1 {
         font-family: 'modesevenregular', Arial, sans-serif;
