@@ -1,7 +1,3 @@
-div {
-
-}
-
 body {
     @font-face {
         font-family: 'modesevenregular';
@@ -42,6 +38,18 @@ p {
 }
 
 input {
+    font-family: 'modesevenregular', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+tr {
+    font-family: 'modesevenregular', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+td {
     font-family: 'modesevenregular', Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
