@@ -37,6 +37,14 @@ p {
     text-align: center;
 }
 
+table {
+    text-align: center;
+}
+
+tr {
+    text-align: center;
+}
+
 input {
     font-family: 'modesevenregular', Arial, sans-serif;
     font-weight: normal;
