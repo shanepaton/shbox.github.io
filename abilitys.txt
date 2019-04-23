@@ -10,7 +10,7 @@ Telepathy — Event PSI. It is used to communicate directly with the mind of ano
 Teleport — Other PSI. When used, it allows the party to teleport to previously-visited towns or settlements. Movement speed gradually increases when Teleport is used, with teleportation occurring after the player successfully avoids obstacles for long enough to reach maximum speed.
 PSI Farewell — Event PSI, used by Poo at the end of the game. It appears to function identically to Teleport β.
 PSI Fire — Offense PSI. An elemental ability that can burn an opponent. Best against ice-based foes. Targets one row of enemies.
-PSI Flash — Offense PSI. Inflicts a random status ailment to an opponent. It can rarely incapacitate a target. Targets all enemies.
+///PSI Flash — Offense PSI. Inflicts a random status ailment to an opponent. It can rarely incapacitate a target. Targets all enemies.
 ///PSI Freeze — Offense PSI. An elemental ability that can freeze to an opponent. Best against fire-based enemies. Targets one.
 ///PSI Magnet — Recover PSI. It steals a small amount of PP from the target. Can target one or all.
 ///PSI Rockin — A very strong Offense PSI ability. Its potential damage range is very broad despite having a high cap, and the attack also has a low chance of failing to affect a target at all. Targets all enemies.
