@@ -9,3 +9,4 @@ document.getElementById("eventClick").onclick = function() {
     numOfClicks += 1;
     eventClick.value = "Clicked "+ numOfClicks; 
 }
+

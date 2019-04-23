@@ -45,6 +45,14 @@ tr {
     text-align: center;
 }
 
+div {
+    text-align: center;
+}
+
+pre {
+    text-align: center;
+}
+
 input {
     font-family: 'modesevenregular', Arial, sans-serif;
     font-weight: normal;
@@ -63,6 +71,12 @@ td {
     font-style: normal;
 }
 
+div {
+    font-family: 'modesevenregular', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
 @font-face {
     font-family: 'modesevenregular';
     src: url('pixelfont.woff2') format('woff2'),
@@ -72,16 +86,20 @@ td {
 
 }
 
-
-
 html {
     
     background: #466368;
     background: radial-gradient(#4869ff,#4897ff, #48cbff);
     background-repeat: repeat;
     height: 998px;
-
+}
     h1 {
+        font-family: 'modesevenregular', Arial, sans-serif;
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    pre {
         font-family: 'modesevenregular', Arial, sans-serif;
         font-weight: normal;
         font-style: normal;
