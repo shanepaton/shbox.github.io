@@ -1,38 +1,83 @@
 body {
-    @font-face {
-        font-family: 'modesevenregular';
-        src: url('pixelfont.woff2') format('woff2'),
-            url('pixelfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
+    @font-facefont-family: modesevenregular;
+    src: url(pixelfont.woff2) format(woff2), url(pixelfont.woff) format(woff);
+    font-weight: 400;
+    font-style: normal;
 }
+
+center-div {
+    width: 100%;
+    text-align: center;
+}
+
 h1 {
     font-family: 'modesevenregular', Arial, sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
-        
+
 p {
     font-family: 'modesevenregular', Arial, sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
-            
+
 a {
     font-family: 'modesevenregular', Arial, sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
-            
+
+marquee {
+    font-family: 'modesevenregular', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 h1 {
     text-align: center;
 }
-            
+
 p {
     text-align: center;
 }
-            
+
+.center {
+    text-align: center;
+}
+
+input {
+    font-family: 'modesevenregular', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'modesevenregular', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: 'modesevenregular', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    font-family: 'modesevenregular', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
 .center {
     text-align: center;
 }
@@ -55,55 +100,52 @@ pre {
 
 input {
     font-family: 'modesevenregular', Arial, sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 
 tr {
     font-family: 'modesevenregular', Arial, sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 
 td {
     font-family: 'modesevenregular', Arial, sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 
 div {
     font-family: 'modesevenregular', Arial, sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'modesevenregular';
-    src: url('pixelfont.woff2') format('woff2'),
-        url('pixelfont.woff') format('woff');
-    font-weight: normal;
+    src: url(pixelfont.woff2) format("woff2"), url(pixelfont.woff) format("woff");
+    font-weight: 400;
     font-style: normal;
-
 }
 
 html {
-    
     background: #466368;
-    background: radial-gradient(#4869ff,#4897ff, #48cbff);
+    background: radial-gradient(#4869ff, #4897ff, #48cbff);
     background-repeat: repeat;
     height: 998px;
 }
-    h1 {
-        font-family: 'modesevenregular', Arial, sans-serif;
-        font-weight: normal;
-        font-style: normal;
-    }
 
-    pre {
-        font-family: 'modesevenregular', Arial, sans-serif;
-        font-weight: normal;
-        font-style: normal;
-    }
+h1 {
+    font-family: 'modesevenregular', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+pre {
+    font-family: 'modesevenregular', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 canvas {
@@ -114,5 +156,3 @@ canvas {
     display: block;
     width: 800px;
 }
-
-<p style="text-align:center"><a href="https://github.com/Shane-Java/Number-Genorator-9000">Random Number Genorator 9000</a><a href="https://github.com/Shane-Java">My Github</a></p>
