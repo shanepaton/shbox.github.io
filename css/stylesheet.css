@@ -16,6 +16,12 @@ h1 {
     font-style: normal;
 }
 
+h2 {
+    font-family: 'modesevenregular', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 p {
     font-family: 'modesevenregular', Arial, sans-serif;
     font-weight: 400;
@@ -71,6 +77,10 @@ a {
 }
 
 h1 {
+    text-align: center;
+}
+
+h2 {
     text-align: center;
 }
 
