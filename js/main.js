@@ -7,6 +7,10 @@ function clickval() {
     eventClick.value = "Clicked " + numOfClicks;
 }
 
+function displayval() {
+    sliderval.value = slider1.value;
+}
+
 var errorSFX = document.getElementById("alertError")
 
 function playSound() {
