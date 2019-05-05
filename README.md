@@ -1,3 +1,3 @@
-# Shane-Java
+# Shane-Games
 ----------------------
-My HTML & CSS code for my website.
+The code for my website Shane-Games.github.io .
