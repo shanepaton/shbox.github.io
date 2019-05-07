@@ -1,0 +1,23 @@
+/* PROJECT */
+
+	Site Name:   Shane-Games
+	Site URL:    https://shane-games.github.io/
+	Created:     2019/03/16
+	Standards:   HTML5, CSS3, JavaScript
+	Software:    Visual Studio Code
+	Licence: Creative Commons 4.0
+
+/* AUTHOR */
+
+	Name:        Shane Paton
+	Location:    Ontario, Canada
+	Site:        https://shane-games.github.io/
+	Contact:     shanegames08@gmail.com
+
+/* META */
+
+	Built with: HTML, CSS, JavaScript.
+
+/* THANKS */
+
+	Axel Greavette
