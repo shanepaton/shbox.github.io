@@ -10,6 +10,12 @@ center-div {
     text-align: center;
 }
 
+table,
+th,
+td {
+    border: 1px solid white;
+}
+
 h1 {
     font-family: 'modesevenregular', Arial, sans-serif;
     font-weight: 400;
