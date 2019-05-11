@@ -13,8 +13,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
 
-    <body>
+    <body onload="myFuntion();">
         <script src="/js/main.js"></script>
+        <script src="/js/jquery-3.4.1.js"></script>
 
         <audio id="alertError">
             <source src="/audio/error.mp3" type="audio/mpeg"> </audio>
@@ -49,6 +50,18 @@
             </a>
 
         </div>
+
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+            <img src="/images/Loader.gif">
+        </div>
+
+        <script>
+            $(window).on("load", function() {
+                $(".loader-wrapper").fadeOut("slow");
+            });
+        </script>
+
     </body>
 
 </html>
