@@ -28,6 +28,12 @@ h1 {
     align-items: center;
 }
 
+.load-img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
 h2 {
     font-family: 'modesevenregular', Arial, sans-serif;
     font-weight: 400;
