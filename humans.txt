@@ -1,7 +1,7 @@
 /* PROJECT */
 
 	Site Name:   Shane-Games
-	Site URL:    https://shane-games.github.io/
+	Site URL:    http://shane-games.com/
 	Created:     2019/03/16
 	Standards:   HTML5, CSS3, JavaScript
 	Software:    Visual Studio Code
@@ -11,7 +11,7 @@
 
 	Name:        Shane Paton
 	Location:    Ontario, Canada
-	Site:        https://shane-games.github.io/
+	Site:        http://shane-games.com/
 	Contact:     shanegames08@gmail.com
 
 /* META */
