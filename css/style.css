@@ -1,6 +1,6 @@
 body {
     @font-facefont-family: modesevenregular;
-    src: url(pixelfont.woff2) format(woff2), url(pixelfont.woff) format(woff);
+    src: url(../fonts/pixelfont.woff2) format(woff2), url(../fonts/pixelfont.woff) format(woff);
     font-weight: 400;
     font-style: normal;
 }
@@ -161,7 +161,7 @@ div {
 
 @font-face {
     font-family: 'modesevenregular';
-    src: url(pixelfont.woff2) format("woff2"), url(pixelfont.woff) format("woff");
+    src: url(../fonts/pixelfont.woff2) format("woff2"), url(../fonts/pixelfont.woff) format("woff");
     font-weight: 400;
     font-style: normal;
 }
