@@ -3,8 +3,11 @@ var numOfClicks = 0;
 function clickval() {
     numOfClicks += 1;
     eventClick.value = "Clicked " + numOfClicks;
-}
 
-function displayval() {
-    sliderval.value = slider1.value;
+    function playSound() {
+        const audio = new Audio('/audio/error.mp3');
+        audio.play();
+    }
+    playSound();
+
 }
