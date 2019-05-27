@@ -149,8 +149,6 @@ a {
     font-family: "modesevenregular", Arial, sans-serif;
     font-weight: 400;
     font-style: normal;
-    text-decoration: none;
-    background-color: transparent;
 }
 
 h1 {
@@ -242,5 +240,4 @@ canvas {
     margin-right: auto;
     display: block;
     width: 800px;
-    
 }
