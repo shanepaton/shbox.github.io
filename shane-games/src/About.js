@@ -1,16 +1,16 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import './App.css';
-import './navbar.css';
 
-class App extends React.Component {
+class About extends React.Component {
   render() {
     return (
       <div>
         <Navbar/>
+        <p className="footer">© 2019-2020 Shane-Games</p>
       </div>
     );
   }
 }
 
-export default App;
+export default About;
