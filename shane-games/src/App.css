@@ -1,87 +1,151 @@
-@import url("https://fonts.googleapis.com/css?family=Exo:200,400&display=swap:");
-
-html , body{
-  background: rgb(13,13,208);
-  background: linear-gradient(270deg, rgba(13,13,208,1) 0%, rgba(0,212,255,1) 100%);
+ @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+ html , body {
+     background: linear-gradient(270deg, #ef32e9 0%, rgba(0,212,255,1) 100%);
+}
+* {
+	font-family: 'Quicksand', sans-serif;
+}
+ h1 {
+	animation: fade ease 1s;
+     font-weight: bold;
+     color: white;
+     text-align: center;
+     font-size: 40px;
+}
+  p{
+	animation: fade ease 1s;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    color: white;
+}
+ .center {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     width: 50%;
+     height: 57%;
+     margin: auto;
+}
+ .footer {
+    font-weight: bolder;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    animation: fade ease 1s;
+}
+ @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+ header * {
+    display: flex;
+}
+ header {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     height: 5rem;
+     display: flex;
+     align-items: center;
+}
+ header img {
+     padding-left: 1rem;
+     width: 4rem;
+     animation: fade ease 1s;
+}
+ header a {
+     font-size: 1rem;
+     color: white;
+     text-decoration: none;
+     margin: 20px;
+     animation: fade ease 1s;
+     font-weight: bolder;
+}
+ .link{
+    display: inline-block;
+}
+ .link::after{
+     content: "";
+     display: block;
+     width: 0;
+     height: 2px;
+     background: #ffffff;
+     transition: width .3s;
+}
+ .link:hover::after{
+     width: 100%;
+     transition: width .3;
+}
+ .button {
+     background: linear-gradient(270deg, #ff5f6d 0%, #ffc371 100%);
+     border: 0;
+     padding: 10px;
+     font-size: 16px;
+     font-weight: bolder;
+     cursor: pointer;
+     border-radius: 3px;
+     position: relative;
+     left: 50%;
+     color: white;
+     transform: translate(-50%, -50%);
+     animation: fade ease 1s;
+     text-align: center;
+}
+ .fbutton {
+     background: linear-gradient(270deg, #ff5f6d 0%, #ffc371 100%);
+     border: 0;
+     padding: 10px;
+     font-size: 16px;
+     font-weight: bolder;
+     cursor: pointer;
+     border-radius: 3px;
+     position: relative;
+     left: 50%;
+     color: white;
+     transform: translate(-50%, -50%);
+     animation: fade ease 2s;
+     text-align: center;
+}
+ .fa{
+     color: white;
+     text-decoration: none;
+     padding-left: 8px;
+     padding-right: 8px;
+     transition: .5s;
 }
 
-h1{
-  font-family: "Exo";
-  font-weight: bolder;
-  color: white;
-  text-align: center;
-  padding-top: 5rem;
-  font-size: 40px;
+.cpr{
+  transition: .5s;
+  cursor: default;
 }
 
-.navbar{
-  display: flex;
-  background-color: #282c34;
-  height: 5%;
-  width: auto;
-  font-family: "Exo";
-  align-items: center;
-  justify-content: space-between;
-}
-li{
-  list-style: none; 
-  color: white;
-  display: inline-block;
-  margin-left: 4rem;
-  position: relative;
+.fa-github:hover{
+  color: #3cffa4;
 }
 
-ul{
-  margin: 0;
-  padding: 1rem;
-  list-style: none;
+.fa-twitter:hover{
+  color: #3cdbff;
 }
 
-img{
-  width: 10%;
-  height: 10%;
-  object-fit: contain;
+.fa-reddit:hover{
+  color: #ff5c5c;
 }
 
-a {
-  color: #48cbff;
-  text-decoration: none;
-  font-size: 20px;
-  vertical-align: center;
-  float: left;
-  padding-bottom: 1rem;
+.fa-envelope:hover{
+  color: #ce5cff;
 }
 
-a:hover{
-  color: "#7fc7ff"
-}
-
-a:visited{
-  color: "#7fc7ff"
-}
-
-button{
-  font-family: "Exo";
-  background-color: #222;
-  border: 0;
-  padding: 10px;
-  text-decoration: none;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 3px;
-  margin: 4px -50% 4px 2px;
-  position: relative;
-  left:50%;
-  color:white;
-  transform: translate(-50%, -50%);
-}
-
-.footer {
-  font-family: "Exo";
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
-  text-align: center;
+.cpr:hover{
+  color: #5cfcff;
 }

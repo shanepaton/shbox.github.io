@@ -17,7 +17,7 @@ export default class Button extends React.Component {
 
     return (
       <div>
-          <button onClick={this.addVal}>{this.state.title}</button>
+          <button className="button" onClick={this.addVal}>{this.state.title}</button>
       </div>
     );
   }

@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Button from './components/Button';
 import './App.css';
 
@@ -8,9 +9,11 @@ class Home extends React.Component {
     return (
       <div>
         <Navbar/>
-        <h1>Programer, Designer, Kid</h1>
-        <Button/>
-        <p className="footer">© 2019-2020 Shane-Games</p>
+        <div className="center">
+          <h1>Programer, Designer, Kid</h1>
+          <Button/>
+        </div>
+        <Footer/>
       </div>
     );
   }
