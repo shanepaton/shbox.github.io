@@ -1,151 +1,156 @@
- @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
- html , body {
-     background: linear-gradient(270deg, #ef32e9 0%, rgba(0,212,255,1) 100%);
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@350&display=swap');
+html,
+body {
+  background: linear-gradient(90deg, #00ff91 0%, #00d4ff 25%, #ef32e9 100%);
 }
 * {
-	font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
- h1 {
-	animation: fade ease 1s;
-     font-weight: bold;
-     color: white;
-     text-align: center;
-     font-size: 40px;
+h1 {
+  animation: fade ease 1s;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  font-size: 40px;
 }
-  p{
-	animation: fade ease 1s;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    color: white;
+p {
+  animation: fade ease 1s;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  color: white;
 }
- .center {
-     position: absolute;
-     top: 0;
-     bottom: 0;
-     left: 0;
-     right: 0;
-     width: 50%;
-     height: 57%;
-     margin: auto;
+.center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50%;
+  height: 57%;
+  margin: auto;
 }
- .footer {
-    font-weight: bolder;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    color: white;
-    text-align: center;
-    animation: fade ease 1s;
+.footer {
+  font-weight: bolder;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  animation: fade ease 1s;
 }
- @keyframes fade {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
- header * {
-    display: flex;
+header * {
+  display: flex;
 }
- header {
-     position: fixed;
-     top: 0;
-     left: 0;
-     right: 0;
-     height: 5rem;
-     display: flex;
-     align-items: center;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  background-color: white;
 }
- header img {
-     padding-left: 1rem;
-     width: 4rem;
-     animation: fade ease 1s;
+header img {
+  padding-left: 1rem;
+  width: 4rem;
+  animation: fade ease 1s;
 }
- header a {
-     font-size: 1rem;
-     color: white;
-     text-decoration: none;
-     margin: 20px;
-     animation: fade ease 1s;
-     font-weight: bolder;
+header a {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+  animation: fade ease 1s;
+  font-weight: bolder;
 }
- .link{
-    display: inline-block;
+.link {
+  display: inline-block;
 }
- .link::after{
-     content: "";
-     display: block;
-     width: 0;
-     height: 2px;
-     background: #ffffff;
-     transition: width .3s;
+.link {
+  background-color: #26d3ff;
+  background-image: linear-gradient(45deg, #32dfe2, #26d3ff);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
- .link:hover::after{
-     width: 100%;
-     transition: width .3;
+.link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  transition: width .3s;
 }
- .button {
-     background: linear-gradient(270deg, #ff5f6d 0%, #ffc371 100%);
-     border: 0;
-     padding: 10px;
-     font-size: 16px;
-     font-weight: bolder;
-     cursor: pointer;
-     border-radius: 3px;
-     position: relative;
-     left: 50%;
-     color: white;
-     transform: translate(-50%, -50%);
-     animation: fade ease 1s;
-     text-align: center;
+.link:hover::after {
+  width: 100%;
+  transition: width .3;
 }
- .fbutton {
-     background: linear-gradient(270deg, #ff5f6d 0%, #ffc371 100%);
-     border: 0;
-     padding: 10px;
-     font-size: 16px;
-     font-weight: bolder;
-     cursor: pointer;
-     border-radius: 3px;
-     position: relative;
-     left: 50%;
-     color: white;
-     transform: translate(-50%, -50%);
-     animation: fade ease 2s;
-     text-align: center;
+.button {
+  background: linear-gradient(270deg, #ff5f6d 0%, #ffc371 100%);
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bolder;
+  cursor: pointer;
+  border-radius: 3px;
+  position: relative;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  animation: fade ease 1s;
+  text-align: center;
 }
- .fa{
-     color: white;
-     text-decoration: none;
-     padding-left: 8px;
-     padding-right: 8px;
-     transition: .5s;
+.fbutton {
+  background: linear-gradient(270deg, #ff5f6d 0%, #ffc371 100%);
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bolder;
+  cursor: pointer;
+  border-radius: 3px;
+  position: relative;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  animation: fade ease 2s;
+  text-align: center;
 }
-
-.cpr{
+.fa {
+  color: white;
+  text-decoration: none;
+  padding-left: 8px;
+  padding-right: 8px;
+  transition: .5s;
+}
+.cpr {
   transition: .5s;
   cursor: default;
 }
-
-.fa-github:hover{
+.fa-github:hover {
   color: #3cffa4;
 }
-
-.fa-twitter:hover{
+.fa-twitter:hover {
   color: #3cdbff;
 }
-
-.fa-reddit:hover{
+.fa-reddit:hover {
   color: #ff5c5c;
 }
-
-.fa-envelope:hover{
+.fa-envelope:hover {
   color: #ce5cff;
 }
-
-.cpr:hover{
+.cpr:hover {
   color: #5cfcff;
 }
