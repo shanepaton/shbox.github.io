@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@350&display=swap');
 html,
 body {
-  background: linear-gradient(90deg, #00ff91 0%, #00d4ff 25%, #ef32e9 100%);
+  background: linear-gradient(90deg, #00d4ff 0%, #ef32e9 100%);
+  margin: 0;
 }
 * {
   font-family: 'Quicksand', sans-serif;
 }
 h1 {
-  animation: fade ease 1s;
   font-weight: bold;
   color: white;
   text-align: center;
   font-size: 40px;
 }
 p {
-  animation: fade ease 1s;
   margin-block-start: 0em;
   margin-block-end: 0em;
+  text-align: center;
   color: white;
 }
 .center {
@@ -38,44 +38,31 @@ p {
   width: 100%;
   color: white;
   text-align: center;
-  animation: fade ease 1s;
-}
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 header * {
   display: flex;
 }
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   height: 5rem;
   display: flex;
   align-items: center;
   background-color: white;
 }
 header img {
-  padding-left: 1rem;
+  margin-left: 1rem;
   width: 4rem;
-  animation: fade ease 1s;
+  border-radius: 5px;
 }
 header a {
   font-size: 1rem;
   color: white;
   text-decoration: none;
   margin: 20px;
-  animation: fade ease 1s;
   font-weight: bolder;
 }
 .link {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
 }
 .link {
   background-color: #26d3ff;
@@ -100,7 +87,7 @@ header a {
   transition: width .3;
 }
 .button {
-  background: linear-gradient(270deg, #ff5f6d 0%, #ffc371 100%);
+  background: linear-gradient(-45deg, #ff6d79 0%, #ffbd71 100%);
   border: 0;
   padding: 10px;
   font-size: 16px;
@@ -111,7 +98,6 @@ header a {
   left: 50%;
   color: white;
   transform: translate(-50%, -50%);
-  animation: fade ease 1s;
   text-align: center;
 }
 .fbutton {
@@ -126,7 +112,6 @@ header a {
   left: 50%;
   color: white;
   transform: translate(-50%, -50%);
-  animation: fade ease 2s;
   text-align: center;
 }
 .fa {
