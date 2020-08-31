@@ -1,0 +1,98 @@
+
+@import url('./Roboto.css');
+
+html, body {
+    height: 100%;
+    background: linear-gradient(110deg, #543864 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #ff6363 66%, #ffbd69 66%);
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+main h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;            
+}
+
+main p{
+    font-family: 'Roboto', sans-serif;      
+}
+
+main a{
+    text-decoration: none;
+}
+
+main i{
+    color: white;
+    font-size: 40px;
+    margin: 10px;
+}
+
+#code:hover{
+    transition: .25s;
+    color: #4ec780;
+}
+
+#gamepad:hover{
+    transition: .25s;
+    color: #f81d66;
+}
+
+#twitter:hover{
+    transition: .25s;
+    color: #00acee;
+}
+
+main img{
+    width: 32;
+    height: 32;
+}
+
+section img{
+    margin: 24px;
+}
+
+footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+footer a{
+    color: white;
+    font-family: 'Roboto', sans-serif;    
+    text-decoration: none;
+}
+
+button{
+    background:  #ff8161 ;
+    border: 0;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
