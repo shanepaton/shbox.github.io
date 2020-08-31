@@ -95,4 +95,5 @@ button{
     transform: translate(-50%, -50%);
     text-align: center;
     transition: .25;
+    outline: none;
 }
