@@ -1,0 +1,17 @@
+{
+    "name": "Shane Paton",
+    "short_name": "Shane",
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#FF6464",
+    "background_color": "#FF6464",
+    "description": "My personal website .",
+    "icons": [
+        {
+            "src": "./images/maskable_icon.png",
+            "sizes": "98x98",
+            "type": "image/png",
+            "purpose": "any maskable"
+          }
+       ]
+  }
