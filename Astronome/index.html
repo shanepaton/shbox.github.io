@@ -12,7 +12,11 @@
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/WebBuild.json", {onProgress: UnityProgress});
     </script>
   </head>
-  <body>
+  <body style="display: flex; flex-direction: colum; text-align: center; justify-content: center;">
+    <div>
+      <h1 >Astronome</h1>
+    </div>
+    
     <div class="webgl-content">
       <div id="unityContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
