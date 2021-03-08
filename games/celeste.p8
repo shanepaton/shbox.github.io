@@ -83,7 +83,7 @@ end
 
 particles = {}
 for i=0,24 do
-	(particles,{
+	add(particles,{
 		x=rnd(128),
 		y=rnd(128),
 		s=0+flr(rnd(5)/4),
