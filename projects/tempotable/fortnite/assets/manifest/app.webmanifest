@@ -1,7 +1,8 @@
 {
   "name": "tempotable",
   "short_name": "tempotable",
-  "start_url": "/projects/tempotable/index.html",
+  "start_url": "/projects/tempotable/fortnite/index.html?utm_source=homescreen",
+  "scope": "/projects/tempotable/fortnite/",
   "display": "standalone",
   "background_color": "#4381C1",
   "theme_color": "#4381C1",
