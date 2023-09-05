@@ -1,34 +1,48 @@
 const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+let day = "-";
 
 function fetchDay() {
     const d = new Date();
     return weekday[d.getDay()];
 }
 
-function fetchTimeLeft(hrn, minn,hrs, mins) {
-    if(hrn < 10) {
-        hrn = `0${hrn}`;
+function fetchTimeLeft(hoursNow, minutesNow, hoursEnd, minutesEnd) {
+    
+    // Add trailing 0s to the time if needed.
+    if(hoursNow < 10) {
+        hoursNow = `0${hoursNow}`;
     }
 
-    if(minn < 10) {
-        minn = `0${minn}`;
+    if(minutesNow < 10) {
+        minutesNow = `0${minutesNow}`;
     }
-    let past = new Date(`2023-01-01T00:${hrn}:${minn}`);
   
-    if(mins < 10) {
-        mins = `0${mins}`;
+    if(hoursEnd < 10) {
+        hoursEnd = `0${hoursEnd}`;
+    }
+
+    if(minutesEnd < 10) {
+        minutesEnd = `0${minutesEnd}`;
     }    
 
-    if(hrs < 10) {
-        hrs = `0${hrs}`;
-    }
-    let now = new Date(`2023-01-01T00:${hrs}:${mins}`);
-    let elapsed = (now - past);
+    var past = new Date(`2023-01-01T00:${hoursNow}:${minutesNow}`);
+    var now = new Date(`2023-01-01T00:${hoursEnd}:${minutesEnd}`);
+    var elapsed = (now - past);
 
-    console.log( Math.ceil(elapsed / 1000));
     return Math.ceil(elapsed / 1000);
 }
 
+function setPeriodBG(p1, p2, p3, p4, p5) {
+    document.getElementById("period-1").style.backgroundColor = p1;
+    document.getElementById("period-2").style.backgroundColor = p2;
+    document.getElementById("period-3").style.backgroundColor = p3;
+    document.getElementById("period-4").style.backgroundColor = p4;
+    document.getElementById("period-5").style.backgroundColor = p5;
+}
+
+function fetchDayFromAPI() {
+    return "A";
+}
 
 function fetchPeriodNormal() {
     
@@ -36,124 +50,117 @@ function fetchPeriodNormal() {
     var day = d.getDay();
     var hour = d.getHours();
     var min = d.getMinutes();
-    var period = 0;
     var time = hour.toString() + min.toString();
+
+    var period = 0;
 
     document.getElementById("time-weekday").innerHTML = `${fetchDay()}`;
     
-    // console.log(day);
-    // console.log(hour);
-    // console.log(min);
-    // console.log(time);
     if (day == 0 || day == 6) {
-        period = -1;
+        
         // Weekend
+        period = -1;
+        
     } else if (time >= 850 && time <= 954) {
+        
+        // 1st period 
         period = 1;
-        // 1st period
-        document.getElementById("period-1").style.backgroundColor = "#FDE74C";
-        document.getElementById("period-2").style.backgroundColor = "#FFF8F0";
-        document.getElementById("period-3").style.backgroundColor = "#FFF8F0";
-        document.getElementById("period-4").style.backgroundColor = "#FFF8F0";
-        document.getElementById("period-5").style.backgroundColor = "#FFF8F0";
+
+        setPeriodBG("#FDE74C", "#FFF8F0", "#FFF8F0", "#FFF8F0", "#FFF8F0")
 
         // FIX THIS FOR B DAYS!!!!!
         document.getElementById("time-teacher").innerHTML = "E.Appleton";
-
         document.getElementById("time-mins").innerHTML = `${fetchTimeLeft(hour, min, 9,54)} Minutes Left`;
+
     } else if (time >= 959 && time <= 1103) {
-        period = 2;
+        
         // 2nd period
-        document.getElementById("period-1").style.backgroundColor = "#88D18A";
-        document.getElementById("period-2").style.backgroundColor = "#FDE74C";
-        document.getElementById("period-3").style.backgroundColor = "#FFF8F0";
-        document.getElementById("period-4").style.backgroundColor = "#FFF8F0";
-        document.getElementById("period-5").style.backgroundColor = "#FFF8F0";
+        period = 2;
+        
+        setPeriodBG("#88D18A", "#FDE74C", "#FFF8F0", "#FFF8F0", "#FFF8F0")
+
         document.getElementById("time-teacher").innerHTML = "D.Buday";
         document.getElementById("time-mins").innerHTML = `${fetchTimeLeft(hour, min, 11,3)} Minutes Left`;
+
     } else if (time >= 1103 && time <= 1113) {
-        period = 3;
+        
         //Break
-        document.getElementById("period-1").style.backgroundColor = "#88D18A";
-        document.getElementById("period-2").style.backgroundColor = "#88D18A";
-        document.getElementById("period-3").style.backgroundColor = "#FFF8F0";
-        document.getElementById("period-4").style.backgroundColor = "#FFF8F0";
-        document.getElementById("period-5").style.backgroundColor = "#FFF8F0";
+        period = 3;
+
+        setPeriodBG("#88D18A", "#88D18A", "#FFF8F0", "#FFF8F0", "#FFF8F0")
+        
         document.getElementById("time-teacher").innerHTML = "Break";
-
         document.getElementById("time-mins").innerHTML = `${fetchTimeLeft(hour, min, 11,13)} Minutes Left`;
+
     } else if (time >= 1113 && time <= 1217) {
-        period = 4;
+        
         //3rd period
-        document.getElementById("period-1").style.backgroundColor = "#88D18A";
-        document.getElementById("period-2").style.backgroundColor = "#88D18A";
-        document.getElementById("period-3").style.backgroundColor = "#FDE74C";
-        document.getElementById("period-4").style.backgroundColor = "#FFF8F0";
-        document.getElementById("period-5").style.backgroundColor = "#FFF8F0";
+        period = 4;
+
+        setPeriodBG("#88D18A", "#88D18A", "#FDE74C", "#FFF8F0", "#FFF8F0")
+        
         document.getElementById("time-teacher").innerHTML = "D.Humbert";
-
         document.getElementById("time-mins").innerHTML = `${fetchTimeLeft(hour, min, 12,17)} Minutes Left`;
+
     } else if (time >= 1217 && time <= 1307) {
-        period = 5;
+        
         //Lunch
-        document.getElementById("period-1").style.backgroundColor = "#88D18A";
-        document.getElementById("period-2").style.backgroundColor = "#88D18A";
-        document.getElementById("period-3").style.backgroundColor = "#88D18A";
-        document.getElementById("period-4").style.backgroundColor = "#FFF8F0";
-        document.getElementById("period-5").style.backgroundColor = "#FFF8F0";
+        period = 5;
+
+        setPeriodBG("#88D18A", "#88D18A", "#88D18A", "#FFF8F0", "#FFF8F0")
+        
         document.getElementById("time-teacher").innerHTML = "Lunch";
-
         document.getElementById("time-mins").innerHTML = `${fetchTimeLeft(hour, min, 13,7)} Minutes Left`;
-    } else if (time >= 1307 && time <= 1411) {
-        period = 6;
-        //4th period
-        document.getElementById("period-1").style.backgroundColor = "#88D18A";
-        document.getElementById("period-2").style.backgroundColor = "#88D18A";
-        document.getElementById("period-3").style.backgroundColor = "#88D18A";
-        document.getElementById("period-4").style.backgroundColor = "#FDE74C";
-        document.getElementById("period-5").style.backgroundColor = "#FFF8F0";
-        document.getElementById("time-teacher").innerHTML = "L.Truitt";
 
+    } else if (time >= 1307 && time <= 1411) {
+        
+        //4th period
+        period = 6;
+
+        setPeriodBG("#88D18A", "#88D18A", "#88D18A", "#FDE74C", "#FFF8F0")
+
+        document.getElementById("time-teacher").innerHTML = "L.Truitt";
         document.getElementById("time-mins").innerHTML = `${fetchTimeLeft(hour, min, 14,11)} Minutes Left`;
+
     } else if (time >= 1411 && time <= 1520) {
-        period = 7;
+        
         // 5th period
-        document.getElementById("period-1").style.backgroundColor = "#88D18A";
-        document.getElementById("period-2").style.backgroundColor = "#88D18A";
-        document.getElementById("period-3").style.backgroundColor = "#88D18A";
-        document.getElementById("period-4").style.backgroundColor = "#88D18A";
-        document.getElementById("period-5").style.backgroundColor = "#FDE74C";
+        period = 7;
+
+        setPeriodBG("#88D18A", "#88D18A", "#88D18A", "#88D18A", "#FDE74C")
+
         document.getElementById("time-teacher").innerHTML = "L.Truitt";
         document.getElementById("time-mins").innerHTML = `${fetchTimeLeft(hour, min, 15,20)} Minutes Left`;
-    }else if (time >= 1520) {
-        period = 8;
-        //School is over
-        document.getElementById("period-1").style.backgroundColor = "#88D18A";
-        document.getElementById("period-2").style.backgroundColor = "#88D18A";
-        document.getElementById("period-3").style.backgroundColor = "#88D18A";
-        document.getElementById("period-4").style.backgroundColor = "#88D18A";
-        document.getElementById("period-5").style.backgroundColor = "#88D18A";
-        document.getElementById("time-teacher").innerHTML = "School is over!";
 
+    }else if (time >= 1520) {
+        
+        //School is over
+        period = 8;
+
+        setPeriodBG("#88D18A", "#88D18A", "#88D18A", "#88D18A", "#88D18A")
+
+        document.getElementById("time-teacher").innerHTML = "School is over!";
         document.getElementById("time-mins").innerHTML = `-- Minutes Left`;
+
     }else if (time >= 850 && time <= 1520) {
-        period = 9;
+        
         //Intermition
+        period = 9;
+
         document.getElementById("time-teacher").innerHTML = "Intermition";
         document.getElementById("time-mins").innerHTML = `-- Minutes Left`;
+
     }  else {
-        period = 0;
+        
         // School has not started
+        period = 0;
+
         document.getElementById("time-teacher").innerHTML = "School has not started yet.";
         document.getElementById("time-mins").innerHTML = `-- Minutes Left`;
+
     }
-    console.log(period);
 
     return period;
 }
-
-// make a function that (using those periods) will return the time left (in the frorm of a string) in minutes.
-
-//fetchPeriodNormal();
 
 setInterval(fetchPeriodNormal, 1000);

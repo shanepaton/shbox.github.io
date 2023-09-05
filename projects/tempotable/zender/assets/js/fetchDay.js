@@ -69,7 +69,7 @@ function fetchPeriodNormal() {
         setPeriodBG("#FDE74C", "#FFF8F0", "#FFF8F0", "#FFF8F0", "#FFF8F0")
 
         // FIX THIS FOR B DAYS!!!!!
-        document.getElementById("time-teacher").innerHTML = "R.Serblowski";
+        document.getElementById("time-teacher").innerHTML = "T.Matisz";
         document.getElementById("time-mins").innerHTML = `${fetchTimeLeft(hour, min, 9,54)} Minutes Left`;
 
     } else if (time >= 959 && time <= 1103) {
@@ -79,7 +79,7 @@ function fetchPeriodNormal() {
         
         setPeriodBG("#88D18A", "#FDE74C", "#FFF8F0", "#FFF8F0", "#FFF8F0")
 
-        document.getElementById("time-teacher").innerHTML = "L.Hemeon";
+        document.getElementById("time-teacher").innerHTML = "D.Buday";
         document.getElementById("time-mins").innerHTML = `${fetchTimeLeft(hour, min, 11,3)} Minutes Left`;
 
     } else if (time >= 1103 && time <= 1113) {
@@ -99,7 +99,7 @@ function fetchPeriodNormal() {
 
         setPeriodBG("#88D18A", "#88D18A", "#FDE74C", "#FFF8F0", "#FFF8F0")
         
-        document.getElementById("time-teacher").innerHTML = "S.Schaan";
+        document.getElementById("time-teacher").innerHTML = "D.Humbert";
         document.getElementById("time-mins").innerHTML = `${fetchTimeLeft(hour, min, 12,17)} Minutes Left`;
 
     } else if (time >= 1217 && time <= 1307) {
@@ -129,7 +129,7 @@ function fetchPeriodNormal() {
 
         setPeriodBG("#88D18A", "#88D18A", "#88D18A", "#88D18A", "#FDE74C")
 
-        document.getElementById("time-teacher").innerHTML = "D.Humbert";
+        document.getElementById("time-teacher").innerHTML = "L.Truitt";
         document.getElementById("time-mins").innerHTML = `${fetchTimeLeft(hour, min, 15,20)} Minutes Left`;
 
     }else if (time >= 1520) {
