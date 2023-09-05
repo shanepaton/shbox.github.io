@@ -58,7 +58,7 @@ function fetchPeriodNormal() {
         document.getElementById("period-5").style.backgroundColor = "#FFF8F0";
 
         // FIX THIS FOR B DAYS!!!!!
-        document.getElementById("time-teacher").innerHTML = "E.Appleton";
+        document.getElementById("time-teacher").innerHTML = "R.Serblowski";
 
         document.getElementById("time-mins").innerHTML = `${fetchTimeLeft(hour, min, 9,54)} Minutes Left`;
     } else if (time >= 959 && time <= 1103) {
@@ -69,7 +69,7 @@ function fetchPeriodNormal() {
         document.getElementById("period-3").style.backgroundColor = "#FFF8F0";
         document.getElementById("period-4").style.backgroundColor = "#FFF8F0";
         document.getElementById("period-5").style.backgroundColor = "#FFF8F0";
-        document.getElementById("time-teacher").innerHTML = "D.Buday";
+        document.getElementById("time-teacher").innerHTML = "L.Hemeon";
         document.getElementById("time-mins").innerHTML = `${fetchTimeLeft(hour, min, 11,3)} Minutes Left`;
     } else if (time >= 1103 && time <= 1113) {
         period = 3;
@@ -90,7 +90,7 @@ function fetchPeriodNormal() {
         document.getElementById("period-3").style.backgroundColor = "#FDE74C";
         document.getElementById("period-4").style.backgroundColor = "#FFF8F0";
         document.getElementById("period-5").style.backgroundColor = "#FFF8F0";
-        document.getElementById("time-teacher").innerHTML = "D.Humbert";
+        document.getElementById("time-teacher").innerHTML = "S.Schaan";
 
         document.getElementById("time-mins").innerHTML = `${fetchTimeLeft(hour, min, 12,17)} Minutes Left`;
     } else if (time >= 1217 && time <= 1307) {
@@ -112,7 +112,7 @@ function fetchPeriodNormal() {
         document.getElementById("period-3").style.backgroundColor = "#88D18A";
         document.getElementById("period-4").style.backgroundColor = "#FDE74C";
         document.getElementById("period-5").style.backgroundColor = "#FFF8F0";
-        document.getElementById("time-teacher").innerHTML = "L.Truitt";
+        document.getElementById("time-teacher").innerHTML = "B.Thompson";
 
         document.getElementById("time-mins").innerHTML = `${fetchTimeLeft(hour, min, 14,11)} Minutes Left`;
     } else if (time >= 1411 && time <= 1520) {
@@ -123,7 +123,7 @@ function fetchPeriodNormal() {
         document.getElementById("period-3").style.backgroundColor = "#88D18A";
         document.getElementById("period-4").style.backgroundColor = "#88D18A";
         document.getElementById("period-5").style.backgroundColor = "#FDE74C";
-        document.getElementById("time-teacher").innerHTML = "L.Truitt";
+        document.getElementById("time-teacher").innerHTML = "D.Humbert";
         document.getElementById("time-mins").innerHTML = `${fetchTimeLeft(hour, min, 15,20)} Minutes Left`;
     }else if (time >= 1520) {
         period = 8;
