@@ -1,7 +1,7 @@
 {
   "name": "tempotable",
   "short_name": "tempotable",
-  "start_url": "/index.html",
+  "start_url": "/projects/tempotable/index.html",
   "display": "standalone",
   "background_color": "#4381C1",
   "theme_color": "#4381C1",
