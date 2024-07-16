@@ -4,6 +4,7 @@
          url('../fonts/DMMono-Medium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
          url('../fonts/FE5Cent-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 body {
@@ -43,10 +45,10 @@ main a {
 }
 
 pre {
-    user-select: none;
     font-size: 16px;
     font-family: "DMMono-Medium", monospace;
 
+    user-select: none;
 }
 
 .logo-red {
@@ -70,14 +72,17 @@ pre {
 }
 
 .card {
-    border: 2px solid #D8DEE9;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 1px;
     background-color: #222533;
     color: #c8c8c8;
+
+    margin: 20px;
+    padding: 20px;
+
     width: 350px;
     position: relative;
+
+    border: 2px solid #D8DEE9;
+  
     text-align: center;
     
 }
@@ -102,14 +107,13 @@ pre {
     background-color: #222533;
     color: #5E81AC;
 
-    font-family: 'FE5Cent-Regular', sans-serif;
-    font-size: 10px;
-
     padding: 0 10px;
     position: absolute;
     top: -22px;
     left: 10px;
-    
+
+    font-family: 'FE5Cent-Regular', sans-serif;
+    font-size: 10px;    
 }
 
 .card-text {
