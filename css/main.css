@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'DMMono-Medium';
+    src: url('../fonts/DMMono-Medium.woff2') format('woff2'),
+         url('../fonts/DMMono-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FE5Cent-Regular';
+    src: url('../fonts/FE5Cent-Regular.woff2') format('woff2'),
+         url('../fonts/FE5Cent-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #222533;
+    color: #ECEFF4;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+main a {
+    text-decoration: none;
+}
+
+pre {
+    user-select: none;
+    font-size: 16px;
+    font-family: "DMMono-Medium", monospace;
+
+}
+
+.logo-red {
+    color:#da4159;
+}
+
+.logo-orange {
+    color:#f58931;
+}
+
+.logo-yellow {
+    color:#feea33;
+}
+
+.logo-green {
+    color:#29d770;
+}
+
+.logo-blue {
+    color:#428be5;
+}
+
+.card {
+    border: 2px solid #D8DEE9;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 1px;
+    background-color: #222533;
+    color: #c8c8c8;
+    width: 350px;
+    position: relative;
+    text-align: center;
+    
+}
+
+.card a {
+    color: #88C0D0
+}
+
+.card a:hover {
+    color: #5E81AC;
+}
+
+.card a:visited {
+    color: #B48EAD;
+}
+
+.card a:visited:hover {
+    color:#BF616A;
+}
+
+.card-title {
+    background-color: #222533;
+    color: #5E81AC;
+
+    font-family: 'FE5Cent-Regular', sans-serif;
+    font-size: 10px;
+
+    padding: 0 10px;
+    position: absolute;
+    top: -22px;
+    left: 10px;
+    
+}
+
+.card-text {
+    font-family: 'FE5Cent-Regular', sans-serif;
+    font-size: 10px;
+    line-height: 10px;
+    
+    word-wrap    : break-word;
+    overflow-wrap: break-word;
+}
+
+.footer {
+    margin-top: auto;
+}
